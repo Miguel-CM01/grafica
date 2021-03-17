@@ -1,0 +1,2 @@
+g = sns.FacetGrid(tips, row="smoker", col="time", margin_titles=True)
+g.map(sns.regplot, "size", "total_bill", color=".3", fit_reg=False, x_jitter=.1)
